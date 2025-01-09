@@ -2,7 +2,7 @@ import ertekel
 import sorozat
 import poggyasz1
 import poggyasz2
-
+'''
 print("1. feladat:")
 print("Kedves vásárlónk! Kérjük segítsge munkánkat azzal, hogy kitölti az alábbi rövid kérdőivet!:")
 print("2/A és B")
@@ -24,8 +24,10 @@ print("2/C")
 print(sorozat.random_method_modified(12))
 print("2/D")
 even_count = sorozat.paratlanok_szama(random_list)
-sorozat.printout(even_count)
-
+print(sorozat.printout(even_count))
+print("2/f")
+sorozat.writeout(sorozat.printout(even_count))
+'''
 
 print("3.feladat")
 luggageobject = poggyasz2.Poggyasz()

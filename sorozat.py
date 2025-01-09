@@ -12,7 +12,7 @@ def random_method_modified(count,list=[]):
         random_number = int(random.random()*(1000+10+1)-10)
         list.append(random_number)
         finaltext = finaltext + f"{random_number}$"
-    finaltext.strip("$")
+    finaltext = finaltext.strip("$")
     return finaltext
 
 def paratlanok_szama(list=[]):
@@ -23,6 +23,11 @@ def paratlanok_szama(list=[]):
     return even_count
 
 def printout(number):
-    print(f"A páratlanok száma: {number}")
+    finaltext = f"A páratlanok száma: {number}"
+    return finaltext
+
+def writeout(text):
+    resultfile = open("eredmeny.txt", "w")
+    resultfile.write(text)
     
 
